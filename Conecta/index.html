@@ -1,0 +1,691 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Trabalho</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="pagina">
+        <header>
+        <img class="logo" width="150px" src="./assets/images/Logo Conecta Trabalho em Azul.png" alt="Logo Conecta Trabalho" >
+        <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="candidatos.html">Candidatos</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="vagas.html">Vagas</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="letreiro">
+                <h2>Seu futuro profissional começa aqui!</h2>
+
+                <p>
+                    Aprenda habilidades digitais, prepare seu currículo
+                    e descubra novas oportunidades profissionais.
+                </p>
+
+                <button onclick="mostrarMensagem()">
+                    Começar agora
+                </button>
+            </section>
+            <section>
+                <div class="forma-abstrata"></div>
+                <img class="banner" src="./assets/images/Jovem sorridente digitando no laptop.png" alt="Jovem sorridente digitando no laptop">
+            </section>
+        </main>
+
+        <div class="sub-page">
+            <a href=""><img src="./assets/images/crie.png" alt="Crie sua conta"></a>
+            <a href=""><img src="./assets/images/habilidades.png" alt="Desenvolva suas habilidades" ></a>
+            <a href=""><img src="./assets/images/oportunidade.png" alt="Descubra novas oportunidades"></a>
+        </div>
+
+        <div class="criar">
+                        <div class="guia-curriculo">
+
+                            <div class="guia-cabecalho">
+                                <span class="etiqueta">GUIA DE CARREIRA</span>
+                                <h2 class="sub-titulo">Como criar um currículo profissional</h2>
+                                <p>Aprenda a construir um currículo que valorize suas competências e esteja alinhado às oportunidades do mercado.</p>
+                            </div>
+
+                            <div class="guia-etapa">
+
+                                <div class="etapa-titulo">
+                                    <span class="numero-etapa">01</span>
+                                    <div>
+                                        <h3>Antes de começar: entenda a vaga</h3>
+                                        <p>O primeiro passo é saber o que a empresa procura.</p>
+                                    </div>
+                                </div>
+
+                                <p>Antes de montar seu currículo, siga estas etapas:</p>
+
+                                <ol class="lista-etapas">
+                                    <li>Escolha o cargo desejado.</li>
+                                    <li>Pesquise vagas relacionadas àquele cargo.</li>
+                                    <li>Identifique os requisitos solicitados.</li>
+                                    <li>Separe as competências e experiências que você realmente possui.</li>
+                                    <li>Adapte o currículo para aquela oportunidade.</li>
+                                </ol>
+
+                                <h4>Exemplos práticos</h4>
+
+                                <div class="exemplo-vaga">
+                                    <h4>Assistente Administrativo</h4>
+                                    <div class="tags">
+                                        <span>Excel</span>
+                                        <span>Organização</span>
+                                        <span>Atendimento</span>
+                                        <span>Rotinas administrativas</span>
+                                    </div>
+                                </div>
+
+                                <div class="exemplo-vaga">
+                                    <h4>Desenvolvedor Python</h4>
+                                    <div class="tags">
+                                        <span>Python</span>
+                                        <span>Django</span>
+                                        <span>APIs</span>
+                                        <span>SQL</span>
+                                        <span>Projetos</span>
+                                    </div>
+                                </div>
+
+                                <div class="dica-guia">
+                                    <strong> Dica importante</strong>
+                                    <p>Utilize palavras-chave relevantes para a vaga, mas nunca inclua habilidades que você não possui.</p>
+                                </div>
+
+                                <div class="etapa-titulo">
+                                    <span class="numero-etapa">02</span>
+                                    <div>
+                                        <h3>Estrutura correta do currículo</h3>
+                                        <p>Saiba como construir seu currículo</p>
+                                    </div>
+                                </div>
+
+                                <p>A ordem recomendada para a maioria dos candidatos é: Ordem	Seção	O que informar</p>
+
+                                <ol class="lista-etapas">
+                                    <li>Dados pessoais	Nome, cidade, telefone, e-mail e LinkedIn</li>
+                                    <li>Resumo profissional	Apresentação objetiva</li>
+                                    <li>Experiência	Empresas, cargos e atividades</li>
+                                    <li>Formação	Escolaridade e cursos</li>
+                                    <li>Competências	Conhecimentos técnicos e comportamentais</li>
+                                    <li>Idiomas	Idiomas e nível real de conhecimento</li>
+                                </ol>
+
+                                <div class="dica-guia">
+                                    <strong> Dica importante</strong>
+                                    <p>Para quem está no primeiro emprego, formação, projetos acadêmicos e cursos podem aparecer antes de experiências profissionais.</p>
+                                </div>
+
+                                <div class="etapa-titulo">
+                                    <span class="numero-etapa">03</span>
+                                    <div>
+                                        <h3>Como preencher cada seção</h3>
+                                        <p>A baixo você podera construir seu curriculo usando todas as nossa dicas</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+            
+            
+            
+            <div class="curriculo">
+
+                            <div class="pdf">
+
+                                <div class="painel-preenchimento">
+
+                                    <h2>Monte seu currículo</h2>
+                                    <p>Escolha uma categoria para começar:</p>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('dados')">
+                                        Dados pessoais
+                                    </button>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('resumo')">
+                                        Resumo profissional
+                                    </button>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('experiencia')">
+                                        Experiência profissional
+                                    </button>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('formacao')">
+                                        Formação acadêmica
+                                    </button>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('cursos')">
+                                        Cursos e certificações
+                                    </button>
+
+                                    <button type="button" class="categoria"
+                                        onclick="mostrarFormulario('habilidades')">
+                                        Habilidades
+                                    </button>
+
+
+
+                                </div>
+
+                                <div class="area-preview">
+
+                                    <button type="button"
+                                        class="botao-pdf"
+                                        onclick="baixarCurriculo()">
+                                        Baixar currículo em PDF
+                                    </button>
+
+                                    <div class="folha-curriculo" id="folha-curriculo">
+
+                                        <h2 id="preview-nome">Seu nome completo</h2>
+                                    <p id="preview-cargo">Cargo ou área profissional</p>
+
+                                    <hr>
+
+                                    <h3>Contato</h3>
+                                    <p id="preview-email">Seu e-mail</p>
+                                    <p id="preview-telefone">Seu telefone</p>
+                                    <p id="preview-cidade">Sua cidade</p>
+
+                                    <h3>Resumo profissional</h3>
+                                    <p id="preview-resumo">
+                                        Sua apresentação profissional aparecerá aqui.
+                                    </p>
+
+                                    <h3>Experiência profissional</h3>
+
+                                    <p id="preview-experiencias">
+                                        Suas experiências aparecerão aqui.
+                                    </p>
+
+                                    <h3>Formação acadêmica</h3>
+                                    <p id="preview-formacoes">
+                                        Sua formação aparecerá aqui.
+                                    </p>
+
+                                    <h3>Cursos e certificações</h3>
+
+                                    <div id="preview-cursos">
+                                        <p>Seus cursos aparecerão aqui.</p>
+                                    </div>
+
+                                    <h3>Habilidades</h3>
+
+                                    <div id="preview-habilidades">
+                                        <p id="placeholder-habilidades">
+                                            Suas habilidades aparecerão aqui.
+                                        </p>
+                                    </div>
+
+
+                                        </div>
+
+                                        </div>
+                                
+
+                                <div id="formulario-dados" class="formulario">
+
+                                        <h3>Dados pessoais</h3>
+
+                                        <label for="nome">Nome completo</label>
+                                        <input type="text" id="nome"
+                                            placeholder="Digite seu nome">
+
+                                        <label for="cargo">Cargo desejado</label>
+                                        <input type="text" id="cargo"
+                                            placeholder="Ex: Assistente administrativo">
+
+                                        <label for="email">E-mail</label>
+                                        <input type="email" id="email"
+                                            placeholder="seuemail@email.com">
+
+                                        <label for="telefone">Telefone</label>
+                                        <input type="tel" id="telefone"
+                                            placeholder="(11) 99999-9999">
+
+                                        <label for="cidade">Cidade e estado</label>
+                                        <input type="text" id="cidade"
+                                            placeholder="Ex: São Paulo - SP">
+
+                                    </div>
+
+                                    
+                                <div id="formulario-resumo" class="formulario">
+
+                                    <h3>Resumo profissional</h3>
+
+                                    <p>
+                                        Faça uma breve apresentação sobre sua trajetória,
+                                        conhecimentos e objetivos profissionais.
+                                    </p>
+
+                                    <label for="resumo">Sua apresentação profissional</label>
+
+                                    <textarea
+                                        id="resumo"
+                                        rows="6"
+                                        maxlength="700"
+                                        placeholder="Escreva aqui seu resumo profissional...">
+                                    </textarea>
+
+                                    <p class="dica-resumo">
+                                        Dica: seja objetivo e destaque suas principais
+                                        qualidades, experiências e conhecimentos.
+                                    </p>
+
+                                    <h4>Não sabe o que escrever? Veja alguns exemplos:</h4>
+
+                                    <details>
+                                        <summary>Exemplo para primeiro emprego</summary>
+
+                                        <p>
+                                            Busco minha primeira oportunidade profissional.
+                                            Sou uma pessoa organizada, dedicada e com facilidade
+                                            para aprender. Tenho interesse em desenvolver minhas
+                                            habilidades e contribuir positivamente para a equipe.
+                                        </p>
+
+                                        <button type="button" onclick="usarExemploResumo('primeiro')">
+                                            Usar este exemplo
+                                        </button>
+                                    </details>
+
+                                    <details>
+                                        <summary>Exemplo para quem já possui experiência</summary>
+
+                                        <p>
+                                            Profissional com experiência em atendimento ao cliente,
+                                            organização de processos e suporte administrativo.
+                                            Possuo facilidade de comunicação, organização e
+                                            foco na resolução de problemas.
+                                        </p>
+
+                                        <button type="button" onclick="usarExemploResumo('experiencia')">
+                                            Usar este exemplo
+                                        </button>
+                                    </details>
+                                </div>
+                                
+                                
+                                <div id="formulario-experiencia" class="formulario">
+
+                                    <h3>Experiência profissional</h3>
+
+                                    <p>Informe suas experiências de trabalho.</p>
+
+                                    <label for="empresa">Nome da empresa</label>
+                                    <input type="text" id="empresa" placeholder="Ex: Empresa ABC">
+
+                                    <label for="cargo-experiencia">Cargo ocupado</label>
+                                    <input type="text" id="cargo-experiencia" placeholder="Ex: Assistente administrativo">
+
+                                    <label for="periodo">Período</label>
+                                    <input type="text" id="periodo" placeholder="Ex: Janeiro/2023 até Março/2025">
+
+                                    <label for="atividades">Principais atividades realizadas</label>
+                                    <textarea id="atividades" rows="5"
+                                        placeholder="Descreva suas responsabilidades e atividades..."></textarea>
+
+                                    <button type="button" onclick="adicionarExperiencia()">
+                                        + Adicionar experiência
+                                    </button>
+
+                                    <div id="lista-experiencias"></div>
+
+                                </div>
+                                
+                                <div id="formulario-formacao" class="formulario">
+
+                                    <h3>Formação acadêmica</h3>
+
+                                    <p>Informe seus estudos e sua escolaridade.</p>
+
+                                    <label for="instituicao">Instituição de ensino</label>
+                                    <input type="text" id="instituicao"
+                                        placeholder="Ex: Universidade Cruzeiro do Sul">
+
+                                    <label for="curso">Curso ou formação</label>
+                                    <input type="text" id="curso"
+                                        placeholder="Ex: Engenharia da Computação">
+
+                                    <label for="nivel">Nível de formação</label>
+                                    <select id="nivel">
+                                        <option value="">Selecione</option>
+                                        <option>Ensino Fundamental</option>
+                                        <option>Ensino Médio</option>
+                                        <option>Curso Técnico</option>
+                                        <option>Graduação</option>
+                                        <option>Pós-graduação</option>
+                                        <option>Mestrado</option>
+                                        <option>Doutorado</option>
+                                    </select>
+
+                                    <label for="status-formacao">Situação</label>
+                                    <select id="status-formacao">
+                                        <option value="">Selecione</option>
+                                        <option>Concluído</option>
+                                        <option>Em andamento</option>
+                                        <option>Trancado</option>
+                                    </select>
+
+                                    <label for="periodo-formacao">Período</label>
+                                    <input type="text" id="periodo-formacao"
+                                        placeholder="Ex: 2023 - 2027">
+
+                                    <button type="button" onclick="adicionarFormacao()">
+                                        + Adicionar formação
+                                    </button>
+
+                                    <div id="lista-formacoes"></div>
+
+                                </div>
+                                
+                                <div id="formulario-cursos" class="formulario">
+
+                                    <h3>Cursos e certificações</h3>
+
+                                    <p>Adicione cursos, treinamentos e certificados que você concluiu.</p>
+
+                                    <label for="nome-curso">Nome do curso</label>
+                                    <input type="text" id="nome-curso"
+                                        placeholder="Ex: Python para iniciantes">
+
+                                    <label for="instituicao-curso">Instituição</label>
+                                    <input type="text" id="instituicao-curso"
+                                        placeholder="Ex: Curso em Vídeo">
+
+                                    <label for="carga-horaria">Carga horária</label>
+                                    <input type="text" id="carga-horaria"
+                                        placeholder="Ex: 40 horas">
+
+                                    <label for="ano-curso">Ano de conclusão</label>
+                                    <input type="number" id="ano-curso"
+                                        placeholder="Ex: 2026">
+
+                                    <button type="button" onclick="adicionarCurso()">
+                                        + Adicionar curso
+                                    </button>
+
+                                    <div id="lista-cursos"></div>
+
+                                </div>
+                                <div id="formulario-habilidades" class="formulario">
+
+                                    <h3>Habilidades</h3>
+
+                                    <p>Adicione seus conhecimentos e competências.</p>
+
+                                    <label for="tipo-habilidade">Categoria</label>
+                                    <select id="tipo-habilidade">
+                                        <option value="">Selecione</option>
+                                        <option>Conhecimento técnico</option>
+                                        <option>Habilidade comportamental</option>
+                                        <option>Idioma</option>
+                                    </select>
+
+                                    <label for="habilidade">Nome da habilidade</label>
+                                    <input type="text" id="habilidade"
+                                        placeholder="Ex: Excel, comunicação, inglês">
+
+                                    <label for="nivel-habilidade">Nível de conhecimento</label>
+                                    <select id="nivel-habilidade">
+                                        <option value="">Selecione</option>
+                                        <option>Básico</option>
+                                        <option>Intermediário</option>
+                                        <option>Avançado</option>
+                                        <option>Fluente</option>
+                                        <option>Nativo</option>
+                                    </select>
+
+                                    <button type="button" onclick="adicionarHabilidade()">
+                                        + Adicionar habilidade
+                                    </button>
+
+                                    <div id="lista-habilidades"></div>
+
+                                </div>
+
+                            </div>
+                            
+
+                        </div>
+                        <section class="desenvolva" id="desenvolva">
+
+                            <div class="titulo-desenvolva">
+                                <h2>Desenvolva suas habilidades</h2>
+
+                                <p>
+                                    Aproveite plataformas gratuitas para aprender,
+                                    adquirir conhecimentos e se preparar para o mercado de trabalho.
+                                </p>
+                            </div>
+
+                            <div class="lista-plataformas">
+
+                                <div class="card-plataforma">
+                                    <h3>Fundação Bradesco</h3>
+
+                                    <p>
+                                        Cursos gratuitos em tecnologia, administração,
+                                        produtividade e desenvolvimento profissional.
+                                    </p>
+
+                                    <a href="https://www.ev.org.br/"
+                                    target="_blank" rel="noopener noreferrer">
+                                        Acessar plataforma
+                                    </a>
+                                </div>
+
+                                <div class="card-plataforma">
+                                    <h3>Aprenda Mais – MEC</h3>
+
+                                    <p>
+                                        Cursos gratuitos em diversas áreas do conhecimento,
+                                        com possibilidade de certificação.
+                                    </p>
+
+                                    <a href="https://aprendamais.mec.gov.br/"
+                                    target="_blank" rel="noopener noreferrer">
+                                        Acessar plataforma
+                                    </a>
+                                </div>
+
+                                <div class="card-plataforma">
+                                    <h3>Escola Virtual Gov</h3>
+
+                                    <p>
+                                        Cursos sobre gestão, comunicação, tecnologia,
+                                        liderança e desenvolvimento profissional.
+                                    </p>
+
+                                    <a href="https://www.escolavirtual.gov.br/"
+                                    target="_blank" rel="noopener noreferrer">
+                                        Acessar plataforma
+                                    </a>
+                                </div>
+
+                                <div class="card-plataforma">
+                                    <h3>Escola do Trabalhador 4.0</h3>
+
+                                    <p>
+                                        Cursos gratuitos voltados à tecnologia,
+                                        ferramentas digitais e produtividade.
+                                    </p>
+
+                                    <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/qualificacao-profissional/caminho-digital"
+                                    target="_blank" rel="noopener noreferrer">
+                                        Acessar plataforma
+                                    </a>
+                                </div>
+
+                                <div class="card-plataforma">
+                                    <h3>Curso em Vídeo</h3>
+
+                                    <p>
+                                        Aulas de programação, informática e tecnologia
+                                        para quem deseja aprender na prática.
+                                    </p>
+
+                                    <a href="https://www.cursoemvideo.com/"
+                                    target="_blank" rel="noopener noreferrer">
+                                        Acessar plataforma
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        
+                        <section class="encontre" id="encontre">
+
+                            <div class="titulo-encontre">
+                                <h2>Encontre oportunidades</h2>
+
+                                <p>
+                                    Dê o próximo passo na sua carreira!
+                                    Encontre oportunidades de emprego, estágio
+                                    e jovem aprendiz.
+                                </p>
+                            </div>
+
+                            <div class="categorias-vagas">
+
+                                <!-- EMPREGO -->
+                                <div class="card-vaga">
+
+                                    <h3>Emprego</h3>
+
+                                    <p>
+                                        Encontre vagas de emprego em diversas
+                                        empresas e áreas profissionais.
+                                    </p>
+
+                                    <div class="links-vagas">
+
+                                        <a href="https://www.linkedin.com/jobs/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            LinkedIn
+                                        </a>
+
+                                        <a href="https://www.infojobs.com.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            InfoJobs
+                                        </a>
+
+                                        <a href="https://br.indeed.com/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            Indeed
+                                        </a>
+
+                                        <a href="https://www.gupy.io/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            Gupy
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- ESTÁGIO -->
+                                <div class="card-vaga">
+
+                                    <h3>Estágio</h3>
+
+                                    <p>
+                                        Encontre oportunidades para estudantes
+                                        que desejam adquirir experiência profissional.
+                                    </p>
+
+                                    <div class="links-vagas">
+
+                                        <a href="https://www.ciee.org.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            CIEE
+                                        </a>
+
+                                        <a href="https://www.nube.com.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            Nube
+                                        </a>
+
+                                        <a href="https://portal.ciee.org.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            Portal CIEE
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- JOVEM APRENDIZ -->
+                                <div class="card-vaga">
+
+                                    <h3>Jovem Aprendiz</h3>
+
+                                    <p>
+                                        Descubra oportunidades para iniciar
+                                        sua trajetória no mercado de trabalho.
+                                    </p>
+
+                                    <div class="links-vagas">
+
+                                        <a href="https://www.ciee.org.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            CIEE
+                                        </a>
+
+                                        <a href="https://www.espro.org.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            ESPRO
+                                        </a>
+
+                                        <a href="https://www.nube.com.br/"
+                                        target="_blank" rel="noopener noreferrer">
+                                            Nube
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        </div>
+                        </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+
+</body>
+</html>
